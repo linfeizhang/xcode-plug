@@ -31,11 +31,11 @@
     [dateformatter setDateFormat:@"HH:mm"];
 //    NSDate * dateTime = [dateformatter dateFromString:@"10:53"];
     NSDate * date = [NSDate date];
-    for (int i = 0; i < 55; i ++) {
-        NSDate *newDate = [date dateByAddingTimeInterval:-60*2*i];
+    for (int i = 0; i < 24; i ++) {
+        NSDate *newDate = [date dateByAddingTimeInterval:-60*60*i];
         NSString * time = [dateformatter stringFromDate: newDate];
         [timeArr addObject:time];
-        [valueArr addObject:[NSNumber numberWithInt:rand()%100 -50]];
+        [valueArr addObject:[NSNumber numberWithInt:rand()%10000 -3530]];
         NSArray * aa = [NSArray arrayWithObjects:time,[NSNumber numberWithInt:rand()%100 -50], nil];
         [allArr addObject:aa];
     }
@@ -64,41 +64,41 @@
 //webview加载完成后加载图表数据
 -(void)webViewDidFinishLoad:(UIWebView *)webView
 {
-//    if(webView == _webView){
-//        NSLog(@"111111");
-//        //传值标题
-//        NSString * setTitle = @"setTitle('数量(吨)')";
-//        [_webView stringByEvaluatingJavaScriptFromString:setTitle];
-//        
-//        NSData * jsonTime = [NSJSONSerialization dataWithJSONObject:timeArr options:NSJSONWritingPrettyPrinted error:nil];
-//        NSString * timeString = [[NSString alloc]initWithData:jsonTime encoding:NSUTF8StringEncoding];
-//        //传值X轴
-//        [_webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"setData(%@)",timeString]];
-//        NSData * jsonValue = [NSJSONSerialization dataWithJSONObject:valueArr options:NSJSONWritingPrettyPrinted error:nil];
-//        NSString * valueString = [[NSString alloc]initWithData:jsonValue encoding:NSUTF8StringEncoding];
-//        //柱状图
-//        NSString *setValueData = [NSString stringWithFormat:@"setValueData(%@)",valueString];
-//        
-//        //传值Y轴数据
-//        [_webView stringByEvaluatingJavaScriptFromString:setValueData];
-//    }else{
-//        NSLog(@"2222");
-//        //传值标题
-//        NSString * setTitle = @"setTitle('数量(吨)')";
-//        [_webView1 stringByEvaluatingJavaScriptFromString:setTitle];
-//        
-//        NSData * jsonTime = [NSJSONSerialization dataWithJSONObject:timeArr options:NSJSONWritingPrettyPrinted error:nil];
-//        NSString * timeString = [[NSString alloc]initWithData:jsonTime encoding:NSUTF8StringEncoding];
-//        //传值X轴
-//        [_webView1 stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"setData(%@)",timeString]];
-//        NSData * jsonValue = [NSJSONSerialization dataWithJSONObject:valueArr options:NSJSONWritingPrettyPrinted error:nil];
-//        NSString * valueString = [[NSString alloc]initWithData:jsonValue encoding:NSUTF8StringEncoding];
-//        //柱状图
-//        NSString *setValueData = [NSString stringWithFormat:@"setValueData(%@)",valueString];
-//        
-//        //传值Y轴数据
-//        [_webView1 stringByEvaluatingJavaScriptFromString:setValueData];
-//    }
+    if(webView == _webView){
+        NSLog(@"111111");
+        //传值标题
+        NSString * setTitle = @"setTitle('数量(吨)')";
+        [_webView stringByEvaluatingJavaScriptFromString:setTitle];
+        
+        NSData * jsonTime = [NSJSONSerialization dataWithJSONObject:timeArr options:NSJSONWritingPrettyPrinted error:nil];
+        NSString * timeString = [[NSString alloc]initWithData:jsonTime encoding:NSUTF8StringEncoding];
+        //传值X轴
+        [_webView stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"setData(%@)",timeString]];
+        NSData * jsonValue = [NSJSONSerialization dataWithJSONObject:valueArr options:NSJSONWritingPrettyPrinted error:nil];
+        NSString * valueString = [[NSString alloc]initWithData:jsonValue encoding:NSUTF8StringEncoding];
+        //柱状图
+        NSString *setValueData = [NSString stringWithFormat:@"setValueData(%@)",valueString];
+        
+        //传值Y轴数据
+        [_webView stringByEvaluatingJavaScriptFromString:setValueData];
+    }else{
+        NSLog(@"2222");
+        //传值标题
+        NSString * setTitle = @"setTitle('数量(吨)')";
+        [_webView1 stringByEvaluatingJavaScriptFromString:setTitle];
+        
+        NSData * jsonTime = [NSJSONSerialization dataWithJSONObject:timeArr options:NSJSONWritingPrettyPrinted error:nil];
+        NSString * timeString = [[NSString alloc]initWithData:jsonTime encoding:NSUTF8StringEncoding];
+        //传值X轴
+        [_webView1 stringByEvaluatingJavaScriptFromString:[NSString stringWithFormat:@"setData(%@)",timeString]];
+        NSData * jsonValue = [NSJSONSerialization dataWithJSONObject:valueArr options:NSJSONWritingPrettyPrinted error:nil];
+        NSString * valueString = [[NSString alloc]initWithData:jsonValue encoding:NSUTF8StringEncoding];
+        //柱状图
+        NSString *setValueData = [NSString stringWithFormat:@"setValueData(%@)",valueString];
+        
+        //传值Y轴数据
+        [_webView1 stringByEvaluatingJavaScriptFromString:setValueData];
+    }
     
     
     
