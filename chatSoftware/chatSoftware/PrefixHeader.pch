@@ -1,0 +1,27 @@
+//
+//  PrefixHeader.pch
+//  chatSoftware
+//
+//  Created by zhanglf on 16/3/24.
+//  Copyright © 2016年 zhanglf. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#define SCREEN_WIDTH  [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT [[UIScreen mainScreen] bounds].size.height
+#import "NSString+triming.h"
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+#import "ZLFUtil.h"
+#import "XMPPFramework.h"
+#import "FMDB.h"
+#import "SVProgressHUD.h"
+#import "Reachability.h"
+#import "AppDelegate.h"
+#import "NSString+ZLFStringExt.h"
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
