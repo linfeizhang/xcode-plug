@@ -163,10 +163,17 @@
 		484286C71CA6D17A0090A7F5 /* ZLFFoundViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 484286C61CA6D17A0090A7F5 /* ZLFFoundViewController.m */; };
 		484286CA1CA6D1AF0090A7F5 /* ZLFFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 484286C91CA6D1AF0090A7F5 /* ZLFFriendViewController.m */; };
 		484B1EF31CA95ED200DF9CE5 /* ZLFMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 484B1EF21CA95ED200DF9CE5 /* ZLFMessage.m */; };
+<<<<<<< HEAD
 		485204431CAD138B00D3C3AC /* ZLFDetailMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 485204421CAD138B00D3C3AC /* ZLFDetailMessageViewController.m */; settings = {ASSET_TAGS = (); }; };
 		485204461CAE038200D3C3AC /* ZLFDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 485204451CAE038200D3C3AC /* ZLFDetailTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		4852044B1CAE8E6400D3C3AC /* NSString+ZLFStringExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4852044A1CAE8E6400D3C3AC /* NSString+ZLFStringExt.m */; settings = {ASSET_TAGS = (); }; };
 		4852044E1CAE90BB00D3C3AC /* ZLFMssageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4852044D1CAE90BB00D3C3AC /* ZLFMssageFrame.m */; settings = {ASSET_TAGS = (); }; };
+=======
+		485204431CAD138B00D3C3AC /* ZLFDetailMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 485204421CAD138B00D3C3AC /* ZLFDetailMessageViewController.m */; };
+		485204461CAE038200D3C3AC /* ZLFDetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 485204451CAE038200D3C3AC /* ZLFDetailTableViewCell.m */; };
+		4852044B1CAE8E6400D3C3AC /* NSString+ZLFStringExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 4852044A1CAE8E6400D3C3AC /* NSString+ZLFStringExt.m */; };
+		4852044E1CAE90BB00D3C3AC /* ZLFMssageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 4852044D1CAE90BB00D3C3AC /* ZLFMssageFrame.m */; };
+>>>>>>> 355055e7e62ec917204ab1d9c862f61e92d9568c
 		4863CD441CA668C700BAF713 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4863CD321CA668C700BAF713 /* FMDatabase.m */; };
 		4863CD451CA668C700BAF713 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4863CD341CA668C700BAF713 /* FMDatabaseAdditions.m */; };
 		4863CD461CA668C700BAF713 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4863CD361CA668C700BAF713 /* FMDatabasePool.m */; };
@@ -2298,7 +2305,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+<<<<<<< HEAD
 				GCC_PREFIX_HEADER = "/Users/zhanglf/Desktop/传智学习/chatSoftware/chatSoftware/PrefixHeader.pch";
+=======
+				GCC_PREFIX_HEADER = "/Users/inhand/Desktop/备份/xcode-plug/chatSoftware/chatSoftware/PrefixHeader.pch";
+>>>>>>> 355055e7e62ec917204ab1d9c862f61e92d9568c
 				HEADER_SEARCH_PATHS = (
 					/usr/include/libxml2,
 					"$(PROJECT_DIR)/$(PROJECT_NAME)/xmpp/module",
@@ -2321,7 +2332,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = BrandAsset;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+<<<<<<< HEAD
 				GCC_PREFIX_HEADER = "/Users/zhanglf/Desktop/传智学习/chatSoftware/chatSoftware/PrefixHeader.pch";
+=======
+				GCC_PREFIX_HEADER = "/Users/inhand/Desktop/备份/xcode-plug/chatSoftware/chatSoftware/PrefixHeader.pch";
+>>>>>>> 355055e7e62ec917204ab1d9c862f61e92d9568c
 				HEADER_SEARCH_PATHS = (
 					/usr/include/libxml2,
 					"$(PROJECT_DIR)/$(PROJECT_NAME)/xmpp/module",

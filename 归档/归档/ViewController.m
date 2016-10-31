@@ -37,12 +37,21 @@
     NSString * path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     path = [path stringByAppendingString:@"students.plist"];
     NSLog(@"path = %@",path);
+<<<<<<< HEAD
     BOOL success = [NSKeyedArchiver archiveRootObject:self.students toFile:path];
     NSLog(@"%d",success);
     NSArray * array = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
     for (ZLFStudent * student in array) {
         NSLog(@"%@",student);
     }
+=======
+//    BOOL success = [NSKeyedArchiver archiveRootObject:self.students toFile:path];
+//    NSLog(@"%d",success);
+//    NSArray * array = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+//    for (ZLFStudent * student in array) {
+//        NSLog(@"%@",student);
+//    }
+>>>>>>> 355055e7e62ec917204ab1d9c862f61e92d9568c
     
     
 }
@@ -55,10 +64,19 @@
 - (IBAction)addTap:(id)sender {
 //    NSDictionary * dict = @{@"age":self.ageText.text,@"name":self.nameText.text,@"sex":self.sexText.text};
 //    [self.students addObject:dict];
+<<<<<<< HEAD
     NSString * path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     path = [path stringByAppendingString:@"students.plist"];
     NSLog(@"path = %@",path);
     BOOL success = [NSKeyedArchiver archiveRootObject:self.students toFile:path];
+=======
+    NSDictionary * dict1 = @{@"age":@15,@"name":@"李四",@"sex":@"女"};
+    ZLFStudent * student1 = [ZLFStudent studentWithDict:dict1];
+    NSString * path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
+    path = [path stringByAppendingString:@"students.plist"];
+    NSLog(@"path = %@",path);
+    BOOL success = [NSKeyedArchiver archiveRootObject:student1 toFile:path];
+>>>>>>> 355055e7e62ec917204ab1d9c862f61e92d9568c
     NSLog(@"%d",success);
 }
 
@@ -66,9 +84,17 @@
     NSString * path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject];
     path = [path stringByAppendingString:@"students.plist"];
     NSLog(@"path = %@",path);
+<<<<<<< HEAD
     NSArray * array = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
     for (ZLFStudent * student in array) {
         NSLog(@"%@",student);
     }
+=======
+    ZLFStudent * student = [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+//    for (ZLFStudent * student in array) {
+//        NSLog(@"%@",student);
+//    }
+      NSLog(@"%@",student);
+>>>>>>> 355055e7e62ec917204ab1d9c862f61e92d9568c
 }
 @end

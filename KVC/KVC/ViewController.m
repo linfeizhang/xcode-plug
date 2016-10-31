@@ -17,10 +17,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+<<<<<<< HEAD
     NSDictionary * dict=[NSDictionary dictionaryWithObjectsAndKeys:@"张三",@"name", nil];
     ZLFPerson * person=[[ZLFPerson alloc]initWithDict:dict];
     NSLog(@"%@",person.name);
     NSLog(@"%@",[[ZLFPerson messageWithDict:dict] name]);
+=======
+//    NSDictionary * dict=[NSDictionary dictionaryWithObjectsAndKeys:@"张三",@"name", nil];
+//    ZLFPerson * person=[[ZLFPerson alloc]initWithDict:dict];
+//    NSLog(@"%@",person.name);
+//    NSLog(@"%@",[[ZLFPerson messageWithDict:dict] name]);
+    NSString * str1 = @"111";
+    NSString * str2 = @"222";
+    NSArray * arr = @[@"1",@"",@"-1"];
+    NSString * str = [arr componentsJoinedByString:@","];
+    NSLog(@"%@",str);
+    
+>>>>>>> 355055e7e62ec917204ab1d9c862f61e92d9568c
 }
 
 - (void)didReceiveMemoryWarning {
